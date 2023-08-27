@@ -4,7 +4,7 @@ use atsrecords;
 create table ats(id int,technology varchar(50));
 insert into ats values(1,"DATA SCIENCE"),(1,"Tableau"),(1,"SQL"),(2,"R"),(2,"poWer BI"),(1,"Python");
 use atsrecords;
-#list candidates which possess all the skills
+#list candidates which possess 'SQL' and 'Python' skills
 SELECT distinct id FROM ats
 WHERE id IN (
     SELECT id
